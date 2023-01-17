@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.main.video_list.VideoListFragment">
+
+    <data>
+
+        <variable
+            name="sort"
+            type="com.dev.testapp.data.enums.EActionType" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvAnimation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textView_bottom_sheet"
+                android:tag="@{sort.ANIMATION.toString()}"
+                android:text="@string/animation" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tvToast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textView_bottom_sheet"
+                android:tag="@{sort.TOAST.toString()}"
+                android:text="@string/toast" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tvCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textView_bottom_sheet"
+                android:tag="@{sort.CALL.toString()}"
+                android:text="@string/call" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tvNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textView_bottom_sheet"
+                android:tag="@{sort.NOTIFICATION.toString()}"
+                android:text="@string/notification" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

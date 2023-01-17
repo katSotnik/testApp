@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="animation">Animation</string>
+    <string name="toast">Toast message</string>
+    <string name="call">Call</string>
+    <string name="notification">Notification</string>
+    <string name="toast_message">Action is Toast</string>
+    <string name="notification_message">Action is Notification</string>
+</resources>
